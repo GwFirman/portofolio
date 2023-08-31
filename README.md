@@ -1,1 +1,1 @@
-studying-git.github.io
+studyinggit.github.io
