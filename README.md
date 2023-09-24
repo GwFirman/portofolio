@@ -1,1 +1,1 @@
-studyinggit.github.io
+https://gwfirman.github.io
