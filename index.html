@@ -16,7 +16,7 @@
 
 <body>
 
-  <div class="navbar bg-base-100 fixed top-0 left-0 right-0 z-50 shadow-sm">
+  <div class="navbar bg-base-300 fixed top-0 left-0 right-0 z-50 shadow-sm">
     <div class="navbar-start">
 
       <a class="btn btn-ghost text-xl" href="index.html">gwfirman</a>
@@ -24,10 +24,33 @@
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
         <li><a class="text-netural-content font-bold">About me</a></li>
-        <li><a class="font-bold">Project</a></li>
+        <li><a class="font-bold" href="project.html">Project</a></li>
       </ul>
     </div>
     <div class="navbar-end">
+      <button class="btn btn-sm">
+        <svg stroke="currentColor" class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M4 9.00005L10.2 13.65C11.2667 14.45 12.7333 14.45 13.8 13.65L20 9" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"></path>
+            <path
+              d="M3 9.17681C3 8.45047 3.39378 7.78123 4.02871 7.42849L11.0287 3.5396C11.6328 3.20402 12.3672 3.20402 12.9713 3.5396L19.9713 7.42849C20.6062 7.78123 21 8.45047 21 9.17681V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V9.17681Z"
+              stroke-width="2" stroke-linecap="round"></path>
+          </g>
+        </svg>
+        Email
+      </button>
+      <button class="btn btn-sm mx-3">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path class="" fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z">
+          </path>
+        </svg>
+        Github
+      </button>
       <label class="swap swap-rotate">
 
         <!-- this hidden checkbox controls the state -->
@@ -68,27 +91,35 @@
 
   <!-- content -->
   <div class="mt-16">
+    <div class="grid grid-cols-1 mx-16">
+      <div class="flex flex-col lg:flex-row justify-center items-center bg-base-300 mt-4 rounded-lg">
+        <div class="flex lg:w-1/2 m-4">
+          <div class="divider divider-horizontal divider-start "></div>
+          <div class="text-base-content ">
 
-    <div class="grid grid-cols-1 mx-8">
-      <div class="flex items-center full ">
-        <div class="tooltip" data-tip="hello">
-          <div class="avatar">
-            <div class="w-20 xl:size-96 rounded">
-              <img src="assets/avatar.png" alt="Tailwind-CSS-Avatar-component" class="" />
-            </div>
+            <p class="font-bold text-sm">Hello my name is</p>
+            <p class="text-2xl lg:text-4xl font-bold font-mono italic">Firman Aziz</p>
+            <p class="text-xs lg:text-lg font-mono text-justify">I am an enthusiastic student in the field of
+              programming and I am a tech enthusiast with a primary focus on software
+              development and web design.
+            </p>
+
           </div>
         </div>
-        <div class="">
-          <h1 class="font-bold">Hello my name is</h1>
-          <h1 class="text-4xl font-bold font-mono italic ">Firman</h1>
+
+        <div class="size-60 xl:size-96 rounded relative">
+          <img src="assets/avatar.png" alt="Tailwind-CSS-Avatar-component"
+            class="absolute inset-0 w-full h-full object-cover z-10" />
+          <svg class="absolute inset-0 w-full h-full object-cover z-0 opacity-50" width="438" height="400"
+            viewBox="0 0 438 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M113.074 13.8276C83.5416 29.5465 64.9738 58.2438 54.0496 88.8673C53.5941 90.1441 48.633 101.527 51.4665 99.7164C85.9708 77.672 121.616 57.3051 156.277 35.4612C174.389 24.0466 192.325 13.3228 213.557 9.04882C214.585 8.84193 217.24 9.31268 216.528 10.0821C201.662 26.1432 181.519 40.5772 164.995 54.318C139.182 75.7819 129.764 83.3382 104.356 103.979C86.5925 118.409 68.563 132.307 53.6622 149.829C41.5146 164.113 30.654 180.03 20.8565 196.002C16.2615 203.493 11.4765 211.594 9.23244 220.219C6.36753 231.231 30.7495 212.299 40.3591 206.206C109.132 162.598 176.366 116.132 247.784 76.8558C268.099 65.6837 289.296 56.2922 309.779 45.4709C319.719 40.2195 316.717 43.274 305.71 51.6058C237.728 103.065 166.127 154.715 110.491 219.961C98.3736 234.171 87.7697 250.599 79.3642 267.297C78.0737 269.86 74.3136 272.624 75.7479 275.11C76.9287 277.157 80.3468 273.706 82.2702 272.334C90.1758 266.692 97.5314 260.315 105.066 254.187C167.295 203.576 229.139 145.03 305 115.473C324.747 107.78 345.453 102.141 365.962 96.875C369.73 95.9076 373.522 95.0329 377.327 94.2273C381.517 93.3404 387.866 91.427 380.169 96.0355C363.011 106.309 345.038 115.176 327.861 125.419C276.982 155.756 228.321 189.091 182.689 226.935C137.316 264.565 98.4818 307.762 59.0221 351.248C56.7839 353.715 45.258 365.765 42.2964 370.492C33.5255 384.492 71.3767 354.629 84.7888 344.984C172.779 281.705 258.113 212.68 359.762 172.431C380.104 164.377 401.498 155.818 423.049 151.508C437.489 148.62 417.046 157.042 414.912 158.224C355.329 191.224 296.461 232.603 249.721 282.408C219.591 314.514 200.296 353.662 176.554 390.189C174.486 393.371 182.266 385.186 185.014 382.568C213.776 355.163 241.705 326.864 270.644 299.65C285.402 285.773 304.815 267.377 322.694 256.254C339.464 245.821 359.029 240.485 378.167 236.622C385.374 235.167 389.486 234.546 396.184 233.781C397.724 233.605 401.375 232.328 400.834 233.781C397.19 243.553 382.285 258.783 376.875 265.488C361.189 284.931 344.63 303.59 328.636 322.769C313.282 341.181 295.173 360.514 284.787 382.439C283.423 385.318 281.647 388.382 286.014 384.893C301.703 372.36 317.119 359.746 333.414 347.955C346.536 338.459 358.972 329.699 372.936 321.671C385.132 314.66 386.654 314.72 383.398 327.031C379.223 342.816 375.351 357.328 395.474 363.001C405.555 365.843 416.769 363.618 426.923 362.549"
+              stroke="currentColor" stroke-width="15" stroke-linecap="round" />
+          </svg>
         </div>
       </div>
 
       <div class="mt-4">
-        <p class="text-lg font-mono">I am an enthusiastic student in the field of
-          programming and I am a tech enthusiast with a primary focus on software
-          development and web design.
-        </p>
 
       </div>
 
