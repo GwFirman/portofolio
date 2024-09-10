@@ -1,4 +1,4 @@
-<html >
+<html>
 
 <head>
   <meta charset="UTF-8" />
@@ -18,10 +18,18 @@
 
 <body>
   <div class="custom-cursor"></div>
-  <div class="navbar bg-base-300 fixed top-0 left-0 right-0 z-50 shadow-sm">
-    <div class="navbar-start">
-
-      <a class="btn btn-ghost text-sm lg:text-lg" href="index.html">gwfirman</a>
+  <div class="navbar fixed top-0 left-0 right-0 z-50 shadow-sm backdrop-blur-sm">
+    <div class="navbar-start flex items-center ms-4">
+      <svg fill="currentColor" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="16"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M6,19.7439414 C4.25221144,19.1261868 3,17.4593282 3,15.5 L3,8.5 C3,6.01471863 5.01471863,4 7.5,4 L8,4 L8,3.5 C8,2.67157288 8.67157288,2 9.5,2 L14.5,2 C15.3284271,2 16,2.67157288 16,3.5 L16,4 L16.5,4 C18.9852814,4 21,6.01471863 21,8.5 L21,15.5 C21,17.4593282 19.7477886,19.1261868 18,19.7439414 L18,20.5 C18,21.3284271 17.3284271,22 16.5,22 L7.5,22 C6.67157288,22 6,21.3284271 6,20.5 L6,19.7439414 L6,19.7439414 Z M7,19.9725356 L7,20.5 C7,20.7761424 7.22385763,21 7.5,21 L16.5,21 C16.7761424,21 17,20.7761424 17,20.5 L17,19.9725356 C16.8358331,19.9906833 16.6690045,20 16.5,20 L7.5,20 C7.33099545,20 7.16416693,19.9906833 7,19.9725356 L7,19.9725356 Z M9,4 L15,4 L15,3.5 C15,3.22385763 14.7761424,3 14.5,3 L9.5,3 C9.22385763,3 9,3.22385763 9,3.5 L9,4 Z M7.5,5 C5.56700338,5 4,6.56700338 4,8.5 L4,15.5 C4,17.4329966 5.56700338,19 7.5,19 L16.5,19 C18.4329966,19 20,17.4329966 20,15.5 L20,8.5 C20,6.56700338 18.4329966,5 16.5,5 L7.5,5 Z M14.5,10 L15.5,10 C15.7761424,10 16,10.2238576 16,10.5 L16,11.5 C16,11.7761424 15.7761424,12 15.5,12 L14.5,12 C14.2238576,12 14,11.7761424 14,11.5 L14,10.5 C14,10.2238576 14.2238576,10 14.5,10 Z M8.5,10 L9.5,10 C9.77614237,10 10,10.2238576 10,10.5 L10,11.5 C10,11.7761424 9.77614237,12 9.5,12 L8.5,12 C8.22385763,12 8,11.7761424 8,11.5 L8,10.5 C8,10.2238576 8.22385763,10 8.5,10 Z M9.14644661,14.8535534 C8.95118446,14.6582912 8.95118446,14.3417088 9.14644661,14.1464466 C9.34170876,13.9511845 9.65829124,13.9511845 9.85355339,14.1464466 C10.4248566,14.7177498 11.1304821,15 12,15 C12.8695179,15 13.5751434,14.7177498 14.1464466,14.1464466 C14.3417088,13.9511845 14.6582912,13.9511845 14.8535534,14.1464466 C15.0488155,14.3417088 15.0488155,14.6582912 14.8535534,14.8535534 C14.0915232,15.6155836 13.1304821,16 12,16 C10.8695179,16 9.90847678,15.6155836 9.14644661,14.8535534 Z">
+          </path>
+        </g>
+      </svg>
+      <a class="text-sm lg:text-lg font-semibold" href="index.html">gwfirman</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -31,7 +39,8 @@
     </div>
     <div class="navbar-end">
       <button class="btn btn-xs lg:btn-sm">
-        <svg stroke="currentColor" class="size-5 lg:size-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg stroke="currentColor" class="size-5 lg:size-6" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
@@ -56,7 +65,7 @@
       <label class="swap swap-rotate">
 
         <!-- this hidden checkbox controls the state -->
-        <input type="checkbox" class="theme-controller" type="checkbox" id="theme-toggle" onchange="toggleTheme()"/>
+        <input type="checkbox" class="theme-controller" type="checkbox" id="theme-toggle" onchange="toggleTheme()" />
 
         <!-- sun icon -->
         <svg class="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -65,7 +74,8 @@
         </svg>
 
         <!-- moon icon -->
-        <svg class="swap-off fill-current size-5 lg:size-6 lg:mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg class="swap-off fill-current size-5 lg:size-6 lg:mr-4" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24">
           <path
             d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
         </svg>
@@ -74,8 +84,8 @@
 
       <div class="dropdown dropdown-end opacity-100 lg:hidden">
 
-        <div tabindex="0" role="button" class=""><svg class="size-5 lg:size-6" viewBox="0 0 24 24"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div tabindex="0" role="button" class=""><svg class="size-5 lg:size-6" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -94,38 +104,105 @@
   <!-- content -->
   <div class="mt-16">
     <div class="grid grid-cols-1 mx-16">
-      <div class="flex flex-col lg:flex-row justify-center items-center bg-base-300 mt-4 rounded-lg">
-        <div class="flex lg:w-1/2 mx-4 my-8 lg:m-4 ">
-          <div class="divider divider-horizontal divider-start "></div>
-          <div class="text-base-content ">
+      <div class="flex flex-col bg-base-300 mt-4 rounded-lg px-4 py-8 lg:p-4">
+        <div class="flex flex-col lg:flex-row justify-center items-center mx-auto">
+          <div class="flex ml-4 lg:ml-16">
+            <div class="text-base-content ">
+              <p class="text-2xl lg:text-4xl font-bold font-mono italic mb-4">Hello, i'm Firman</p>
 
-            <p class="font-bold text-sm">Hello</p>
-            <p class="text-2xl lg:text-4xl font-bold font-mono italic">Firman Aziz</p>
-            <p class="text-xs lg:text-lg font-mono text-justify">I am an enthusiastic student in the field of
-              programming and I am a tech enthusiast with a primary focus on software
-              development and web design.
-            </p>
+              <p class="text-xs lg:text-lg font-mono lg:mr-16 mb-4">I am an enthusiastic student in the field of
+                programming and I am a tech enthusiast with a primary focus on software development and web design.
+              </p>
+              <p class="text-xs lg:text-lg font-mono lg:mr-16 mb-4">I'm currently studying Infomratics, Computer
+                Science at Amikom University. I'm originally from Purwokerto.</p>
 
+              <p class="text-xs lg:text-lg font-mono lg:mr-16 mb-4 font-bold">Things I'm exploring right now</p>
+              <div class="flex flex-row justify-center lg:justify-start items-center gap-6">
+                <div class="size-12">
+                  <img src="icon/Figma-logo.svg">
+                </div>
+                <div class="size-12">
+                  <img src="icon/html-1.svg">
+                </div>
+                <div class="size-12">
+                  <img src="icon/laravel-2.svg">
+                </div>
+                <div class="size-12">
+                  <img src="icon/tailwindcss.svg">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="size-60 lg:size-96 rounded relative">
+            <img src="assets/avatar.png" alt="Tailwind-CSS-Avatar-component"
+              class="absolute inset-0 w-full h-full object-cover z-10" />
+            <svg class="absolute inset-0 w-full h-full object-cover z-0 opacity-50" width="438" height="400"
+              viewBox="0 0 438 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M113.074 13.8276C83.5416 29.5465 64.9738 58.2438 54.0496 88.8673C53.5941 90.1441 48.633 101.527 51.4665 99.7164C85.9708 77.672 121.616 57.3051 156.277 35.4612C174.389 24.0466 192.325 13.3228 213.557 9.04882C214.585 8.84193 217.24 9.31268 216.528 10.0821C201.662 26.1432 181.519 40.5772 164.995 54.318C139.182 75.7819 129.764 83.3382 104.356 103.979C86.5925 118.409 68.563 132.307 53.6622 149.829C41.5146 164.113 30.654 180.03 20.8565 196.002C16.2615 203.493 11.4765 211.594 9.23244 220.219C6.36753 231.231 30.7495 212.299 40.3591 206.206C109.132 162.598 176.366 116.132 247.784 76.8558C268.099 65.6837 289.296 56.2922 309.779 45.4709C319.719 40.2195 316.717 43.274 305.71 51.6058C237.728 103.065 166.127 154.715 110.491 219.961C98.3736 234.171 87.7697 250.599 79.3642 267.297C78.0737 269.86 74.3136 272.624 75.7479 275.11C76.9287 277.157 80.3468 273.706 82.2702 272.334C90.1758 266.692 97.5314 260.315 105.066 254.187C167.295 203.576 229.139 145.03 305 115.473C324.747 107.78 345.453 102.141 365.962 96.875C369.73 95.9076 373.522 95.0329 377.327 94.2273C381.517 93.3404 387.866 91.427 380.169 96.0355C363.011 106.309 345.038 115.176 327.861 125.419C276.982 155.756 228.321 189.091 182.689 226.935C137.316 264.565 98.4818 307.762 59.0221 351.248C56.7839 353.715 45.258 365.765 42.2964 370.492C33.5255 384.492 71.3767 354.629 84.7888 344.984C172.779 281.705 258.113 212.68 359.762 172.431C380.104 164.377 401.498 155.818 423.049 151.508C437.489 148.62 417.046 157.042 414.912 158.224C355.329 191.224 296.461 232.603 249.721 282.408C219.591 314.514 200.296 353.662 176.554 390.189C174.486 393.371 182.266 385.186 185.014 382.568C213.776 355.163 241.705 326.864 270.644 299.65C285.402 285.773 304.815 267.377 322.694 256.254C339.464 245.821 359.029 240.485 378.167 236.622C385.374 235.167 389.486 234.546 396.184 233.781C397.724 233.605 401.375 232.328 400.834 233.781C397.19 243.553 382.285 258.783 376.875 265.488C361.189 284.931 344.63 303.59 328.636 322.769C313.282 341.181 295.173 360.514 284.787 382.439C283.423 385.318 281.647 388.382 286.014 384.893C301.703 372.36 317.119 359.746 333.414 347.955C346.536 338.459 358.972 329.699 372.936 321.671C385.132 314.66 386.654 314.72 383.398 327.031C379.223 342.816 375.351 357.328 395.474 363.001C405.555 365.843 416.769 363.618 426.923 362.549"
+                stroke="currentColor" stroke-width="15" stroke-linecap="round" />
+            </svg>
           </div>
         </div>
 
-        <div class="size-60 lg:size-96 rounded relative">
-          <img src="assets/avatar.png" alt="Tailwind-CSS-Avatar-component"
-            class="absolute inset-0 w-full h-full object-cover z-10" />
-          <svg class="absolute inset-0 w-full h-full object-cover z-0 opacity-50" width="438" height="400"
-            viewBox="0 0 438 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M113.074 13.8276C83.5416 29.5465 64.9738 58.2438 54.0496 88.8673C53.5941 90.1441 48.633 101.527 51.4665 99.7164C85.9708 77.672 121.616 57.3051 156.277 35.4612C174.389 24.0466 192.325 13.3228 213.557 9.04882C214.585 8.84193 217.24 9.31268 216.528 10.0821C201.662 26.1432 181.519 40.5772 164.995 54.318C139.182 75.7819 129.764 83.3382 104.356 103.979C86.5925 118.409 68.563 132.307 53.6622 149.829C41.5146 164.113 30.654 180.03 20.8565 196.002C16.2615 203.493 11.4765 211.594 9.23244 220.219C6.36753 231.231 30.7495 212.299 40.3591 206.206C109.132 162.598 176.366 116.132 247.784 76.8558C268.099 65.6837 289.296 56.2922 309.779 45.4709C319.719 40.2195 316.717 43.274 305.71 51.6058C237.728 103.065 166.127 154.715 110.491 219.961C98.3736 234.171 87.7697 250.599 79.3642 267.297C78.0737 269.86 74.3136 272.624 75.7479 275.11C76.9287 277.157 80.3468 273.706 82.2702 272.334C90.1758 266.692 97.5314 260.315 105.066 254.187C167.295 203.576 229.139 145.03 305 115.473C324.747 107.78 345.453 102.141 365.962 96.875C369.73 95.9076 373.522 95.0329 377.327 94.2273C381.517 93.3404 387.866 91.427 380.169 96.0355C363.011 106.309 345.038 115.176 327.861 125.419C276.982 155.756 228.321 189.091 182.689 226.935C137.316 264.565 98.4818 307.762 59.0221 351.248C56.7839 353.715 45.258 365.765 42.2964 370.492C33.5255 384.492 71.3767 354.629 84.7888 344.984C172.779 281.705 258.113 212.68 359.762 172.431C380.104 164.377 401.498 155.818 423.049 151.508C437.489 148.62 417.046 157.042 414.912 158.224C355.329 191.224 296.461 232.603 249.721 282.408C219.591 314.514 200.296 353.662 176.554 390.189C174.486 393.371 182.266 385.186 185.014 382.568C213.776 355.163 241.705 326.864 270.644 299.65C285.402 285.773 304.815 267.377 322.694 256.254C339.464 245.821 359.029 240.485 378.167 236.622C385.374 235.167 389.486 234.546 396.184 233.781C397.724 233.605 401.375 232.328 400.834 233.781C397.19 243.553 382.285 258.783 376.875 265.488C361.189 284.931 344.63 303.59 328.636 322.769C313.282 341.181 295.173 360.514 284.787 382.439C283.423 385.318 281.647 388.382 286.014 384.893C301.703 372.36 317.119 359.746 333.414 347.955C346.536 338.459 358.972 329.699 372.936 321.671C385.132 314.66 386.654 314.72 383.398 327.031C379.223 342.816 375.351 357.328 395.474 363.001C405.555 365.843 416.769 363.618 426.923 362.549"
-              stroke="currentColor" stroke-width="15" stroke-linecap="round" />
-          </svg>
+
+        <div class="flex items-center justify-center ">
+
         </div>
       </div>
 
-      <div class="mt-4">
-
+      <div class="flex w-full flex-col mt-8">
+        <div class="divider">
+          <h1 class="text-sm  lg:text-lg font-medium">More about me</h1>
+        </div>
       </div>
 
+      <div class="flex gap-2 mb-4">
+        <div class="avatar">
+          <div class="size-12 rounded-full bg-neutral">
+            <img class="object-cover" src="assets/avatar-sm.png" alt="" srcset="">
+          </div>
+        </div>
+        <div class="grid grid-rows-2">
+          <h1 class="font-medium text-lg">Firman aziz</h1>
+          <h1>Junior programmer</h1>
+        </div>
+      </div>
 
+      <div class="collapse collapse-plus bg-base-200 mb-4">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Things i wanna learn more</div>
+        <div class="collapse-content">
+          <div class="flex justify-start gap-2">
+            <div class="">
+              <button class="btn btn-sm btn-outline">Photography</button>
+            </div>
+            <div class="">
+              <button class="btn btn-sm btn-outline">Machine learning</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="collapse collapse-plus bg-base-200 mb-4">
+        <input type="radio" name="my-accordion-3"/>
+        <div class="collapse-title text-xl font-medium">Things i love</div>
+        <div class="collapse-content">
+          <div class="flex justify-start gap-2">
+            <div class="">
+              <button class="btn btn-sm btn-outline">Movie</button>
+            </div>
+            <div class="">
+              <button class="btn btn-sm btn-outline">Art</button>
+            </div>
+            <div class="">
+              <button class="btn btn-sm btn-outline">Music</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
