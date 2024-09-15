@@ -1,1 +1,1 @@
-https://gwfirman.github.io
+https://gwfirman.my.id
