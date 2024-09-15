@@ -10,7 +10,8 @@ module.exports = async (req, res) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': 'Basic ' + Buffer.from(client_id + ':' + client_secret).toString('base64')
+      'Authorization': 'Basic ' + Buffer.from(client_id + ':' + client_secret).toString('base64'),
+      'Access-Control-Allow-Origin': '*'
     },
     body: new URLSearchParams({
       grant_type: 'refresh_token',
