@@ -1,5 +1,5 @@
 
- fetch('https://firmansporto.vercel.app/api/spotify')
+ fetch('/api/spotify')
  .then(response => response.json())
  .then(data => {
    const trackList = document.getElementById('track-list');
