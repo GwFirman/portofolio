@@ -53,7 +53,7 @@
         </svg>
         Email
       </button>
-      <button class="btn btn-xs lg:btn-sm  mx-3">
+      <a class="btn btn-xs lg:btn-sm  mx-3" href="https://github.com/GwFirman" target="_blank">
 
         <svg xmlns="http://www.w3.org/2000/svg" class="size-5 lg:size-6" fill="currentColor" viewBox="0 0 24 24">
           <path class="" fill-rule="evenodd" clip-rule="evenodd"
@@ -61,7 +61,7 @@
           </path>
         </svg>
         Github
-      </button>
+      </a>
       <label class="swap swap-rotate">
 
         <!-- this hidden checkbox controls the state -->
@@ -203,8 +203,17 @@
           </div>
         </div>
       </div>
+      <div class="collapse collapse-plus bg-base-200 mb-4">
+        <input type="radio" name="my-accordion-3"/>
+        <div class="collapse-title text-md lg:text-xl font-medium">The songs I've played the most this week</div>
+        <div class="collapse-content">
+          <li id="track-list">
+
+          </li>
+        </div>
+      </div>
     </div>
   </div>
 
-
+  <script src="app.js"></script>
 </body>
