@@ -1,21 +1,21 @@
 
- fetch('/api/spotify')
+ fetch('https://firmansporto.vercel.app/api/spotify')
  .then(response => response.json())
  .then(data => {
    const trackList = document.getElementById('track-list');
    data.items.forEach(track => {
-     // Create list item element
+    
      const listItem = document.createElement('li');
      listItem.classList.add('border', 'border-neutral-content', 'border-2', 'rounded-md','mb-4');
 
-     // Create the main div that wraps the content
+    
      const divContainer = document.createElement('div');
      divContainer.classList.add('p-4', 'flex', 'items-center');
 
-     // Create the image element
+    
      const img = document.createElement('img');
      img.id = 'cover';
-     img.src = track.album.images[0].url; // Set image source from the API
+     img.src = track.album.images[0].url; 
      img.alt = `Cover image for ${track.name}`;
      img.classList.add('rounded-md', 'mr-4', 'size-20');
 
