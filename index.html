@@ -1,9 +1,19 @@
 <html>
 
 <head>
+  <meta property="og:title" content="Firman's Portofolio" />
+  <meta property="og:image" content="https://firmansporto.vercel.app/assets/tumbnailweb.png" />
+  <meta property="og:description" content="About myself and my projects" />
+  <meta property="og:url" content="https://firmansporto.vercel.app/" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta property="og:type" content="website" />
+
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GwFirman</title>
+  <data value="about" id="index-page"></data>
   <link rel="stylesheet" href="main.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -19,101 +29,9 @@
 
 <body>
   <div class="custom-cursor"></div>
-  <div class="navbar fixed top-0 left-0 right-0 z-50 shadow-sm backdrop-blur-sm">
-    <div class="navbar-start flex items-center ms-8 lg:ms-16">
-      <a class="text-sm lg:text-lg font-bold brand" href="index.html">gwfirman</a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a class="text-netural-content font-bold text-secondary">About me</a></li>
-        <li><a href="project.html">Project</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end mr-4 lg:mr-8">
-      <button class="btn btn-xs lg:btn-sm">
-        <svg stroke="currentColor" class="size-5 lg:size-6" viewBox="0 0 24 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path d="M4 9.00005L10.2 13.65C11.2667 14.45 12.7333 14.45 13.8 13.65L20 9" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round"></path>
-            <path
-              d="M3 9.17681C3 8.45047 3.39378 7.78123 4.02871 7.42849L11.0287 3.5396C11.6328 3.20402 12.3672 3.20402 12.9713 3.5396L19.9713 7.42849C20.6062 7.78123 21 8.45047 21 9.17681V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V9.17681Z"
-              stroke-width="2" stroke-linecap="round"></path>
-          </g>
-        </svg>
-        Email
-      </button>
-      <a class="btn btn-xs lg:btn-sm  mx-3" href="https://github.com/GwFirman" target="_blank">
-
-        <svg xmlns="http://www.w3.org/2000/svg" class="size-5 lg:size-6" fill="currentColor" viewBox="0 0 24 24">
-          <path class="" fill-rule="evenodd" clip-rule="evenodd"
-            d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z">
-          </path>
-        </svg>
-        Github
-      </a>
-      <div class="hidden lg:flex">
-        <label class="swap swap-rotate ">
-
-          <!-- this hidden checkbox controls the state -->
-          <input type="checkbox" class="theme-controller" type="checkbox" id="theme-toggle" onchange="toggleTheme()" />
-
-          <!-- sun icon -->
-          <svg class="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
-          </svg>
-
-          <!-- moon icon -->
-          <svg class="swap-off fill-current size-5 lg:size-6 lg:mr-4" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24">
-            <path
-              d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
-          </svg>
-
-        </label>
-      </div>
-      <div class="dropdown dropdown-end opacity-100 lg:hidden">
-
-        <div tabindex="0" role="button" class=""><svg class="size-5 lg:size-6" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round"></path>
-            </g>
-          </svg></div>
-        <ul tabindex="0" class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-          <li><a class="text-secondary">About me</a></li>
-          <li><a href="project.html">Project</a></li>
-          <li class="flex items-start">
-            <label class="swap swap-rotate">
-
-              <!-- this hidden checkbox controls the state -->
-              <input type="checkbox" class="theme-controller" type="checkbox" id="theme-toggle"
-                onchange="toggleTheme()" />
-
-              <!-- sun icon -->
-              <svg class="swap-on fill-current size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path
-                  d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
-              </svg>
-
-              <!-- moon icon -->
-              <svg class="swap-off fill-current size-5" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24">
-                <path
-                  d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
-              </svg>
-            </label>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <!-- navbar -->
+  <div id="navbar-container"></div>
+  <script src="app/navbar.js"></script>
 
   <!-- content -->
   <div class="mt-16">
@@ -230,7 +148,8 @@
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </span>
-            <p class="text-sm lg:text-lg font-medium">Updated daily using <a href="https://developer.spotify.com/"class="font-bold" target="_blank">Spotify Api</a></p>
+            <p class="text-sm lg:text-md font-medium">Updated daily using <a href="https://developer.spotify.com/"
+                class="font-primary text-green-500" target="_blank">Spotify Api</a></p>
 
           </div>
         </div>
@@ -238,5 +157,5 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="/app/app.js"></script>
 </body>
