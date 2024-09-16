@@ -10,14 +10,14 @@
 
     
      const divContainer = document.createElement('div');
-     divContainer.classList.add('p-4', 'flex', 'items-center');
+     divContainer.classList.add('p-2','lg:p-4', 'flex', 'items-center');
 
     
      const img = document.createElement('img');
      img.id = 'cover';
      img.src = track.album.images[0].url; 
      img.alt = `Cover image for ${track.name}`;
-     img.classList.add('rounded-md', 'mr-4', 'lg-size-20','size-12');
+     img.classList.add('rounded-md', 'mr-4', 'lg:size-20','size-12');
 
      
      const textContainer = document.createElement('div');
