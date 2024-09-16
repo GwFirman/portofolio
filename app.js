@@ -6,8 +6,12 @@
    data.items.forEach(track => {
     
      const listItem = document.createElement('li');
-     listItem.classList.add('border', 'border-neutral-content', 'border-2', 'rounded-md','mb-4');
+     listItem.classList.add('border', 'hover:border-neutral-content', 'border-2', 'rounded-md','mb-4');
 
+     const linkItem = document.createElement('a');
+     linkItem.href = track.external_urls.spotify;
+     linkItem.target = '_blank';
+    
     
      const divContainer = document.createElement('div');
      divContainer.classList.add('p-2','lg:p-4', 'flex', 'items-center');
@@ -43,8 +47,8 @@
      divContainer.appendChild(textContainer);
 
      
-     listItem.appendChild(divContainer);
-
+     linkItem.appendChild(divContainer);
+     listItem.appendChild(linkItem);
      
      trackList.appendChild(listItem);
    });
