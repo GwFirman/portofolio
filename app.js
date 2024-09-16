@@ -17,11 +17,11 @@
      img.id = 'cover';
      img.src = track.album.images[0].url; 
      img.alt = `Cover image for ${track.name}`;
-     img.classList.add('rounded-md', 'mr-4', 'size-20');
+     img.classList.add('rounded-md', 'mr-4', 'lg-size-20','size-12');
 
      
      const textContainer = document.createElement('div');
-     textContainer.classList.add('text-md','lg:text-xl');
+     textContainer.classList.add('text-sm','lg:text-xl');
 
     
      const songTitle = document.createElement('p');
