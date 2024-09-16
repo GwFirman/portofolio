@@ -9,7 +9,6 @@ function toggleTheme() {
     }
   }
   
-  // Set theme on page load
   (function() {
     let currentTheme = localStorage.getItem('theme');
     if (currentTheme === 'dark') {
