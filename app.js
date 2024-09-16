@@ -21,16 +21,16 @@
      img.id = 'cover';
      img.src = track.album.images[0].url; 
      img.alt = `Cover image for ${track.name}`;
-     img.classList.add('rounded-md', 'mr-4', 'lg:size-20','size-12');
+     img.classList.add('rounded-md', 'mr-4', 'lg:size-16','size-12');
 
      
      const textContainer = document.createElement('div');
-     textContainer.classList.add('text-sm','lg:text-xl');
+     textContainer.classList.add('text-sm','lg:text-md');
 
     
      const songTitle = document.createElement('p');
      songTitle.id = 'judul-lagu';
-     songTitle.classList.add('font-bold');
+     songTitle.classList.add('font-medium');
      songTitle.textContent = track.name;
 
     
