@@ -7,6 +7,7 @@ fetch('/api/spotify')
     const trackList = document.getElementById('track-list');
 
     if (currentPlaying.currently_playing_type === 'track') {
+      const currentPlayingList = document.getElementById('current-playing');
 
       const listItem = document.createElement('li');
       listItem.classList.add('border', 'hover:border-neutral-content', 'border-2', 'rounded-md', 'mb-4');
@@ -47,7 +48,7 @@ fetch('/api/spotify')
 
       listItem.appendChild(linkItem);
 
-      trackList.appendChild(listItem);
+      currentPlayingList.appendChild(listItem);
     }
 
     dataTopTracks.items.forEach(track => {
