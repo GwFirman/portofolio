@@ -137,26 +137,44 @@
           </div>
         </div>
       </div>
-      <div class="collapse collapse-plus bg-base-200 mb-4">
-        <input type="radio" name="my-accordion-3" />
-        <div class="collapse-title text-md lg:text-xl font-medium">The songs I've played the most this week</div>
-        <div class="collapse-content">
-          <ul id="current-playing">
-          </ul>
-          <ul id="track-list">
-          </ul>
-          <div class="flex items-center gap-2">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-            </span>
-            <p class="text-sm lg:text-md font-medium">Updated daily using <a href="https://developer.spotify.com/"
-                class="font-primary text-green-500" target="_blank">Spotify Api</a></p>
+      <div class="collapse collapse-plus bg-base-200 mb-4"></div>
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-md lg:text-xl font-medium">Current Playing song</div>
+      <div class="collapse-content">
+        <ul id="current-playing">
+        </ul>
+        <ul id="current-playing">
+        </ul>
+        <div class="flex items-center gap-2">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+          </span>
+          <p class="text-sm lg:text-md font-medium">Updated daily using <a href="https://developer.spotify.com/"
+              class="font-primary text-green-500" target="_blank">Spotify Api</a></p>
 
-          </div>
         </div>
       </div>
     </div>
+    <div class="collapse collapse-plus bg-base-200 mb-4">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-md lg:text-xl font-medium">The songs I've played the most this week</div>
+      <div class="collapse-content">
+
+        <ul id="track-list">
+        </ul>
+        <div class="flex items-center gap-2">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+          </span>
+          <p class="text-sm lg:text-md font-medium">Updated daily using <a href="https://developer.spotify.com/"
+              class="font-primary text-green-500" target="_blank">Spotify Api</a></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <script src="/app/app.js"></script>
