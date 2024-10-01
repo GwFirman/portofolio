@@ -26,7 +26,23 @@ module.exports = async (req, res) => {
     }
   });
 
-  const topTracksData = await topTracksResponse.json();
+  const currentPlayingResponse = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
+    headers: {
+      'Authorization': 'Bearer ' + access_token
+    }
+  });
 
-  res.json(topTracksData);
+  const topTracksData = await topTracksResponse.json();
+  let currentPlayingData = null;  
+
+  if (currentPlayingResponse.status === 200) {
+    currentPlayingData = await currentPlayingResponse.json();
+  }
+
+  const responseData = {
+    topTracks: topTracksData,
+    currentPlaying: currentPlayingData || null
+  };
+
+  res.json(responseData);
 };
