@@ -1,4 +1,3 @@
-
 fetch('/api/spotify')
   .then(response => response.json())
   .then(data => {
@@ -35,7 +34,7 @@ fetch('/api/spotify')
 
       const artistName = document.createElement('p');
       artistName.id = 'nama-artis';
-      
+
       artistName.textContent = currentPlaying.item.artists.map(artist => artist.name).join(', ');
 
       textContainer.appendChild(songTitle);
@@ -49,6 +48,51 @@ fetch('/api/spotify')
       listItem.appendChild(linkItem);
 
       currentPlayingList.appendChild(listItem);
+    } else {
+      const currentPlayingList = document.getElementById('current-playing');
+
+
+      const listItem = document.createElement('li');
+      listItem.classList.add('border', 'hover:border-neutral-content', 'border-2', 'rounded-md', 'mb-4');
+
+      const linkItem = document.createElement('a');
+      linkItem.href = '#';
+      linkItem.target = '_blank';
+
+      const divContainer = document.createElement('div');
+      divContainer.classList.add('p-2', 'lg:p-4', 'flex', 'items-center');
+
+      const placeholder = document.createElement('p');
+      placeholder.textContent = "404";
+
+      const img = document.createElement('div');
+      img.classList.add('rounded-md', 'mr-4', 'lg:size-16', 'size-12', 'bg-base-100', 'flex', 'justify-center', 'items-center');
+
+      const textContainer = document.createElement('div');
+      textContainer.classList.add('text-sm', 'lg:text-md');
+
+      const songTitle = document.createElement('p');
+      songTitle.id = 'judul-lagu';
+      songTitle.classList.add('font-medium');
+      songTitle.textContent = "No song is currently playing.";
+
+      const artistName = document.createElement('p');
+      artistName.id = 'nama-artis';
+      artistName.textContent = "Nobody";
+
+      textContainer.appendChild(songTitle);
+      textContainer.appendChild(artistName);
+
+      img.appendChild(placeholder);
+      divContainer.appendChild(img);
+
+      divContainer.appendChild(textContainer);
+
+      linkItem.appendChild(divContainer);
+      listItem.appendChild(linkItem);
+
+      currentPlayingList.appendChild(listItem);
+
     }
 
     dataTopTracks.items.forEach(track => {
@@ -60,10 +104,8 @@ fetch('/api/spotify')
       linkItem.href = track.external_urls.spotify;
       linkItem.target = '_blank';
 
-
       const divContainer = document.createElement('div');
       divContainer.classList.add('p-2', 'lg:p-4', 'flex', 'items-center');
-
 
       const img = document.createElement('img');
       img.id = 'cover';
@@ -71,29 +113,23 @@ fetch('/api/spotify')
       img.alt = `Cover image for ${track.name}`;
       img.classList.add('rounded-md', 'mr-4', 'lg:size-16', 'size-12');
 
-
       const textContainer = document.createElement('div');
       textContainer.classList.add('text-sm', 'lg:text-md');
-
 
       const songTitle = document.createElement('p');
       songTitle.id = 'judul-lagu';
       songTitle.classList.add('font-medium');
       songTitle.textContent = track.name;
 
-
       const artistName = document.createElement('p');
       artistName.id = 'nama-artis';
       artistName.textContent = track.artists.map(artist => artist.name).join(', ');
 
-
       textContainer.appendChild(songTitle);
       textContainer.appendChild(artistName);
 
-
       divContainer.appendChild(img);
       divContainer.appendChild(textContainer);
-
 
       linkItem.appendChild(divContainer);
       listItem.appendChild(linkItem);
