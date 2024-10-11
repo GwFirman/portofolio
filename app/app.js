@@ -4,9 +4,9 @@ fetch('/api/spotify')
     const currentPlaying = data.currentPlaying;
     const dataTopTracks = data.topTracks;
     const trackList = document.getElementById('track-list');
+    const currentPlayingList = document.getElementById('current-playing');
 
     if (currentPlaying.currently_playing_type === 'track') {
-      const currentPlayingList = document.getElementById('current-playing');
 
       const listItem = document.createElement('li');
       listItem.classList.add('border', 'hover:border-neutral-content', 'border-2', 'rounded-md', 'mb-4');
@@ -49,15 +49,9 @@ fetch('/api/spotify')
 
       currentPlayingList.appendChild(listItem);
     } else {
-      const currentPlayingList = document.getElementById('current-playing');
-
-
+      
       const listItem = document.createElement('li');
       listItem.classList.add('border', 'hover:border-neutral-content', 'border-2', 'rounded-md', 'mb-4');
-
-      const linkItem = document.createElement('a');
-      linkItem.href = '#';
-      linkItem.target = '_blank';
 
       const divContainer = document.createElement('div');
       divContainer.classList.add('p-2', 'lg:p-4', 'flex', 'items-center');
@@ -88,8 +82,7 @@ fetch('/api/spotify')
 
       divContainer.appendChild(textContainer);
 
-      linkItem.appendChild(divContainer);
-      listItem.appendChild(linkItem);
+      listItem.appendChild(divContainer);
 
       currentPlayingList.appendChild(listItem);
 
