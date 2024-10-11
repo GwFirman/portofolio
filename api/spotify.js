@@ -41,7 +41,7 @@ module.exports = async (req, res) => {
 
   const responseData = {
     topTracks: topTracksData,
-    currentPlaying: currentPlayingData || null
+    currentPlaying: currentPlayingData ||  "No track is currently being played" 
   };
 
   res.json(responseData);
