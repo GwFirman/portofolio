@@ -9,7 +9,7 @@ fetch('/api/spotify')
     if (currentPlaying.currently_playing_type === 'track') {
 
       const listItem = document.createElement('li');
-      listItem.classList.add('hover:border', 'hover:border-neutral-content', 'hover:border-1', 'rounded-md', 'mb-4');
+      listItem.classList.add('border', 'hover:border-neutral-content', 'border-transparent' ,'border-1', 'rounded-md', 'mb-4');
 
       const linkItem = document.createElement('a');
       linkItem.href = currentPlaying.item.external_urls.spotify;
@@ -51,7 +51,7 @@ fetch('/api/spotify')
     } else {
 
       const listItem = document.createElement('li');
-      listItem.classList.add('hover:border', 'hover:border-neutral-content', 'hover:border-1', 'rounded-md', 'mb-4');
+      listItem.classList.add('border', 'hover:border-neutral-content', 'border-transparent' ,'border-1', 'rounded-md', 'mb-4');
 
       const divContainer = document.createElement('div');
       divContainer.classList.add('p-2', 'lg:p-4', 'flex', 'items-center');
