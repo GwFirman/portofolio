@@ -39,4 +39,4 @@ Check out the live version of the portfolio here: [gwfirman.my.id](https://gwfir
    ```bash
     cd portofolio
    
-3. Open index.html in your browser to explore the project.
+3. Open **`index.html`** in your browser to explore the project.
