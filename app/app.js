@@ -91,7 +91,7 @@ fetch('/api/spotify')
     dataTopTracks.items.forEach(track => {
 
       const listItem = document.createElement('li');
-      listItem.classList.add('hover:border', 'hover:border-neutral-content', 'hover:border-1', 'rounded-md', 'mb-4');
+      listItem.classList.add('border', 'hover:border-neutral-content', 'border-transparent' ,'border-1', 'rounded-md', 'mb-4');
 
       const linkItem = document.createElement('a');
       linkItem.href = track.external_urls.spotify;
