@@ -27,7 +27,7 @@ This portfolio is built with the following tools:
 
 ## Live Demo
 
-Check out the live version of the portfolio here: [firmansporto.vercel.app](https://firmansporto.vercel.app)
+Check out the live version of the portfolio here: [firmansporto.vercel.app](https://gwfirman.my.id)
 
 ## How to Run Locally
 
