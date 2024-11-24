@@ -2,14 +2,6 @@
 
 Welcome to my portfolio repository! This project showcases my work and journey as a software developer, focusing on web design and software development.
 
-## About Me
-
-Hello! I'm Firman, a passionate student in Informatics at Amikom University. Originally from Purwokerto, I am enthusiastic about technology and enjoy exploring new tools and frameworks. My interests include:
-
-- **Web Design**
-- **Software Development**
-- **UI/UX Principles**
-
 ## Technologies in Use
 
 This portfolio is built with the following tools:
